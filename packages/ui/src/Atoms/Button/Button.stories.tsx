@@ -1,7 +1,7 @@
-import { Button } from './Button';
+import { Button } from './Button'
 
-import type { Meta, StoryFn } from '@storybook/react';
-import type { ButtonProps } from './Button';
+import type { Meta, StoryFn } from '@storybook/react'
+import type { ButtonProps } from './Button'
 
 // Learn how to write stories:
 // https://web.docs.shopify.io/docs/guides/storybook/how-to-write-story-files
@@ -14,19 +14,19 @@ const meta: Meta = {
     // Learn more: https://pocka.github.io/storybook-addon-designs/?path=/docs/docs-figma-readme--page
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/...?node-id=...'
-    }
-  }
-};
+      url: 'https://www.figma.com/file/...?node-id=...',
+    },
+  },
+}
 
-export default meta;
+export default meta
 
 // 👇 We create a "template" of how args map to rendering
-const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />;
+const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />
 
 // 👇 Each story then reuses that template
-export const Basic = Template.bind({});
+export const Basic = Template.bind({})
 
 // Story args
 // Learn more: https://storybook.js.org/docs/react/writing-stories/args
-Basic.args = { children: 'Hello Gaëlle !' };
+Basic.args = { children: 'Hello Gaëlle !' }

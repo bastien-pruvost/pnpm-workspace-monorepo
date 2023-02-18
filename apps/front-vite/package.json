@@ -1,18 +1,21 @@
 {
-  "name": "front",
-  "private": true,
+  "name": "front-vite",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write ./"
   },
   "dependencies": {
-    "functions": "workspace:*"
+    "functions": "workspace:*",
+    "tools": "workspace:*",
+    "ui": "workspace:*"
   },
   "devDependencies": {
+    "prettier": "^2.8.4",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
-  }
+  },
+  "prettier": "tools/.prettierrc.json"
 }

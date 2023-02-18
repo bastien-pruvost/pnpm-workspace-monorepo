@@ -1,34 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
     "module": "ESNext",
+    "moduleResolution": "node",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "moduleResolution": "Node",
-    "strict": true,
-    "allowJs": false,
-    "skipLibCheck": true,
-    "useDefineForClassFields": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": false,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noImplicitReturns": true,
-    "noUncheckedIndexedAccess": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "incremental": true,
-    "baseUrl": "./src",
+    "plugins": [{}],
+    "baseUrl": ".",
     "paths": {
-      "@/Atoms/*": ["./Atoms/*"],
-      "@/components-providers": ["components-providers/index.tsx"],
-      "@/lib/*": ["./lib/*"],
-      "@/assets/*": ["./assets/*"],
-      "@/prisma/*": ["./prisma/*"]
-    },
-    "plugins": [{}]
+      "@/*": ["./src/*"]
+    }
   },
+  "extends": "tools/tsconfig.base.json",
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -7,9 +7,14 @@
   "license": "ISC",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write ./"
   },
   "dependencies": {
-    "date-fns": "^2.29.3"
-  }
+    "date-fns": "^2.29.3",
+    "tools": "workspace:*"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  },
+  "prettier": "tools/.prettierrc.json"
 }

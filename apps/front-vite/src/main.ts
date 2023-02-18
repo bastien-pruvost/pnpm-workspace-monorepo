@@ -1,12 +1,10 @@
-import './style.css';
-import typescriptLogo from './typescript.svg';
-import { setupCounter } from './counter';
+import './style.css'
+import typescriptLogo from './typescript.svg'
+import { setupCounter } from './counter'
 
-import { capitalize } from 'functions';
-import { addDays } from 'functions';
-
-console.log(capitalize('bonjour'));
-console.log(addDays(123456, 2));
+import { capitalize } from 'functions'
+import { addDays } from 'functions'
+import { Button } from 'ui'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -24,6 +22,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       Click on the Vite and TypeScript logos to learn more
     </p>
   </div>
-`;
+`
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!);
+setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
