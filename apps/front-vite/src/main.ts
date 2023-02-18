@@ -4,7 +4,6 @@ import { setupCounter } from './counter'
 
 import { capitalize } from 'functions'
 import { addDays } from 'functions'
-import { Button } from 'ui'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
