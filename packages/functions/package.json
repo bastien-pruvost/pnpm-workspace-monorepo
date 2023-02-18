@@ -1,20 +1,16 @@
 {
-  "name": "functions",
+  "name": "@monorepo/functions",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "author": "Bastien Pruvost <contact@pruvostbastien.fr>",
-  "license": "ISC",
   "main": "src/index.ts",
   "scripts": {
     "format": "prettier --write ./"
   },
+  "prettier": "tools/.prettierrc.json",
   "dependencies": {
-    "date-fns": "^2.29.3",
-    "tools": "workspace:*"
+    "date-fns": "^2.29.3"
   },
   "devDependencies": {
+    "@monorepo/tools": "workspace:*",
     "prettier": "^2.8.4"
-  },
-  "prettier": "tools/.prettierrc.json"
+  }
 }

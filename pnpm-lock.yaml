@@ -4,29 +4,29 @@ importers:
 
   apps/front-next:
     specifiers:
+      '@monorepo/functions': workspace:*
+      '@monorepo/tools': workspace:*
+      '@monorepo/ui': workspace:*
       '@next/font': 13.1.6
       '@types/node': 18.14.0
       '@types/react': ^18.0.28
       '@types/react-dom': ^18.0.11
       eslint: 8.34.0
       eslint-config-next: 13.1.6
-      functions: workspace:*
       next: 13.1.6
       prettier: ^2.8.4
       react: ^18.2.0
       react-dom: ^18.2.0
-      tools: workspace:*
       typescript: ^4.9.5
-      ui: workspace:*
     dependencies:
+      '@monorepo/functions': link:../../packages/functions
+      '@monorepo/ui': link:../../packages/ui
       '@next/font': 13.1.6
-      functions: link:../../packages/functions
       next: 13.1.6_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      tools: link:../../packages/tools
-      ui: link:../../packages/ui
     devDependencies:
+      '@monorepo/tools': link:../../packages/tools
       '@types/node': 18.14.0
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
@@ -37,30 +37,30 @@ importers:
 
   apps/front-vite:
     specifiers:
-      functions: workspace:*
+      '@monorepo/functions': workspace:*
+      '@monorepo/tools': workspace:*
+      '@monorepo/ui': workspace:*
       prettier: ^2.8.4
-      tools: workspace:*
       typescript: ^4.9.3
-      ui: workspace:*
       vite: ^4.1.0
     dependencies:
-      functions: link:../../packages/functions
-      tools: link:../../packages/tools
-      ui: link:../../packages/ui
+      '@monorepo/functions': link:../../packages/functions
+      '@monorepo/ui': link:../../packages/ui
     devDependencies:
+      '@monorepo/tools': link:../../packages/tools
       prettier: 2.8.4
       typescript: 4.9.5
       vite: 4.1.2
 
   packages/functions:
     specifiers:
+      '@monorepo/tools': workspace:*
       date-fns: ^2.29.3
       prettier: ^2.8.4
-      tools: workspace:*
     dependencies:
       date-fns: 2.29.3
-      tools: link:../tools
     devDependencies:
+      '@monorepo/tools': link:../tools
       prettier: 2.8.4
 
   packages/tools:
@@ -68,6 +68,8 @@ importers:
 
   packages/ui:
     specifiers:
+      '@monorepo/functions': workspace:*
+      '@monorepo/tools': workspace:*
       '@storybook/addon-essentials': ^7.0.0-beta.50
       '@storybook/addon-interactions': ^7.0.0-beta.50
       '@storybook/addon-links': ^7.0.0-beta.50
@@ -84,13 +86,14 @@ importers:
       react-dom: ^18.2.0
       sass: ^1.58.3
       storybook: ^7.0.0-beta.50
-      tools: workspace:*
       typescript: ^4.9.5
       vite: ^4.1.2
     dependencies:
+      '@monorepo/functions': link:../functions
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
+      '@monorepo/tools': link:../tools
       '@storybook/addon-essentials': 7.0.0-beta.50_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-interactions': 7.0.0-beta.50_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-links': 7.0.0-beta.50_biqbaboplfbrettd7655fr4n2y
@@ -105,7 +108,6 @@ importers:
       prop-types: 15.8.1
       sass: 1.58.3
       storybook: 7.0.0-beta.50
-      tools: link:../tools
       typescript: 4.9.5
       vite: 4.1.2_sass@1.58.3
 

@@ -2,9 +2,9 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
 
-import { addDays } from 'functions'
-import { capitalize } from 'functions'
-import { Button } from 'ui'
+import { addDays } from '@monorepo/functions'
+import { capitalize } from '@monorepo/functions'
+import { Button } from '@monorepo/ui'
 
 const inter = Inter({ subsets: ['latin'] })
 

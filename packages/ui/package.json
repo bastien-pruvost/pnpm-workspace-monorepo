@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "@monorepo/ui",
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
@@ -7,11 +7,14 @@
     "build": "storybook build",
     "format": "prettier --write ./"
   },
+  "prettier": "tools/.prettierrc.json",
   "dependencies": {
+    "@monorepo/functions": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@monorepo/tools": "workspace:*",
     "@storybook/addon-essentials": "^7.0.0-beta.50",
     "@storybook/addon-interactions": "^7.0.0-beta.50",
     "@storybook/addon-links": "^7.0.0-beta.50",
@@ -27,8 +30,6 @@
     "sass": "^1.58.3",
     "storybook": "^7.0.0-beta.50",
     "typescript": "^4.9.5",
-    "tools": "workspace:*",
     "vite": "^4.1.2"
-  },
-  "prettier": "tools/.prettierrc.json"
+  }
 }

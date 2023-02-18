@@ -1,5 +1,5 @@
 {
-  "name": "front-vite",
+  "name": "@monorepo/front-vite",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,15 +7,15 @@
     "preview": "vite preview",
     "format": "prettier --write ./"
   },
+  "prettier": "tools/.prettierrc.json",
   "dependencies": {
-    "functions": "workspace:*",
-    "tools": "workspace:*",
-    "ui": "workspace:*"
+    "@monorepo/functions": "workspace:*",
+    "@monorepo/ui": "workspace:*"
   },
   "devDependencies": {
+    "@monorepo/tools": "workspace:*",
     "prettier": "^2.8.4",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
-  },
-  "prettier": "tools/.prettierrc.json"
+  }
 }

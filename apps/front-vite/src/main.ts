@@ -2,8 +2,8 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import { setupCounter } from './counter'
 
-import { capitalize } from 'functions'
-import { addDays } from 'functions'
+import { capitalize } from '@monorepo/functions'
+import { addDays } from '@monorepo/functions'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
