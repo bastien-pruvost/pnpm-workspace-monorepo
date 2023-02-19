@@ -1,20 +1,19 @@
 {
   "name": "@monorepo/ui",
-  "version": "1.0.0",
   "main": "src/index.ts",
+  "version": "1.0.0",
   "scripts": {
     "dev": "storybook dev -p 6006 --ci",
     "build": "storybook build",
     "format": "prettier --write ./"
   },
-  "prettier": "tools/.prettierrc.json",
   "dependencies": {
     "@monorepo/functions": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@monorepo/tools": "workspace:*",
+    "@monorepo/eslint-config": "workspace:*",
     "@storybook/addon-essentials": "^7.0.0-beta.50",
     "@storybook/addon-interactions": "^7.0.0-beta.50",
     "@storybook/addon-links": "^7.0.0-beta.50",
@@ -25,6 +24,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.34.0",
     "prettier": "^2.8.4",
     "prop-types": "^15.8.1",
     "sass": "^1.58.3",

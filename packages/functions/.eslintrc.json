@@ -2,8 +2,6 @@
   "extends": [
     "@monorepo/eslint-config",
     "@monorepo/eslint-config/typescript",
-    "@monorepo/eslint-config/react",
-    "@monorepo/eslint-config/next",
     "@monorepo/eslint-config/prettier"
   ],
   "root": true,

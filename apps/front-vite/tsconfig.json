@@ -10,6 +10,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "extends": "@monorepo/tools/tsconfig.base.json",
+  "extends": "../../tsconfig.base.json",
   "include": ["**/*.ts", "**/*.tsx"]
 }
